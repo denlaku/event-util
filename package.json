@@ -1,0 +1,22 @@
+{
+  "name": "event-util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denlaku/event-util.git"
+  },
+  "keywords": [
+    "event"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denlaku/event-util/issues"
+  },
+  "homepage": "https://github.com/denlaku/event-util#readme"
+}
