@@ -7,7 +7,9 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: "[name].js"
+    filename: "[name].js",
+    libraryTarget: "umd",
+    library: "EnentUtil"
   },
   devtool: "cheap-module-source-map",
   module: {
