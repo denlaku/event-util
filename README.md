@@ -4,10 +4,13 @@ npm i --save event-util
 ```
 
 # Example
-```
-  import event from 'event-util';
-  
-  event.on(document, 'click', () => {
+```js
+import event from 'event-util';
+// add event listener
+const ev = event.on(document, 'click', () => {
 
-  });
+});
+
+// remove
+ev.off();
 ```
