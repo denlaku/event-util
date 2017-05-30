@@ -1,4 +1,5 @@
-var webpack = require("webpack");
+const webpack = require("webpack");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   context: __dirname,
@@ -11,7 +12,7 @@ module.exports = {
     libraryTarget: "umd",
     library: "EnentUtil"
   },
-  devtool: "cheap-module-source-map",
+  devtool: "source-map",
   module: {
     loaders: [
       {
@@ -30,7 +31,10 @@ module.exports = {
         NODE_ENV: JSON.stringify("production")
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}, sourceMap: false})
+    new UglifyJSPlugin({
+      beautify: true,
+      sourceMap: true
+    })
   ],
   resolve: {
     extensions: [".webpack.js", ".web.js", ".js", ".jsx"]

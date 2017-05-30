@@ -2,7 +2,7 @@
   "name": "event-util",
   "version": "1.0.6",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,9 @@
     "url": "https://github.com/denlaku/event-util/issues"
   },
   "homepage": "https://github.com/denlaku/event-util#readme",
+  "files": [
+    "src"
+  ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
@@ -28,6 +31,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.0.0",
     "rimraf": "^2.6.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1"
   }
 }

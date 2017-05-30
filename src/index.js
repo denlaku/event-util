@@ -4,7 +4,9 @@ export function off(target, type, callback) {
   } else if (target.detachEvent) {
     target.detachEvent(`on${type}`, callback);
   } else {
-    target[`on${type}`] = null;
+    if (target[`on${type}`] === callback) {
+      target[`on${type}`] = null;
+    }
   }
 }
 
